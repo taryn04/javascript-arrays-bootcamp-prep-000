@@ -46,8 +46,3 @@ function destructivelyRemoveElementFromEndOfArray(array){
 function removeElementFromEndOfArray(array){
   return array.slice(0, array.length - 1)
 }
-
-var items = [1, 2, 3, 4, 5, 6]
-function test(array){
-  return [...items.slice(0,4),...items.slice(2)] //expecting [1,2,3,4,3,4,5,6]
-}
